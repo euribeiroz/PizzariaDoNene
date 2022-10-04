@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&family=Poppins:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dangrek', cursive;
+    background-color: rgb(217, 19, 19);
+    color: rgb(255, 255, 255);
+}
+
+header{
+    max-width: 1500px;
+}
+
+.cabeca{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-items: center;
+}
+
+.cabeca-logo img{
+    width: 350px;
+}
+
+.cabeca-logo-direita img{
+    float: right;
+    width: 350px;
+}
+
+.cabeca-titulo{
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    width: 500px;
+
+    font-size: 30px;
+}
+
+.formulario{
+    margin: auto;
+    text-align: center;
+    justify-items: center;
+    width: 300px;
+    height: 530px;
+    border: 2px solid black;
+    border-radius: 15px;
+
+    font-size: 20px;
+}
+
+.formulario input{
+    width: 250px;
+}
+
+.formulario button{
+    width: 155px;
+    height: 45px;
+
+    font-size: 25px;
+}
+
+h2{
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.pedido{
+    height: 200px;
+    margin:auto;    
+    text-align: center;
+    justify-items: center;
+    display: flex;
+}
+
+.tamanhoPizza{
+    margin:10px;
+    margin-right: 50px;
+    margin-left: 40px;
+    justify-items: center;
+    text-align: center;
+}
+
+.saboresPizza{
+    margin:10px;
+    margin-right: 50px;
+    justify-items: center;
+    text-align: center;
+}
+
+.adicionaisPizza{
+    margin:10px;
+    margin-right: 50px;
+    margin-left: 20px;
+    justify-items: center;
+    text-align: center;
+}
+
+.bebidasPizza{
+    margin:10px;
+    margin-right: 100px;
+    justify-items: center;
+    text-align: center;
+}
+
+.retiradaPizza{
+    margin:10px;
+    margin-right: 50px;
+    justify-items: center;
+    text-align: center;
+}
+
+.confirma{
+    margin: auto;
+    text-align: center;
+}
+
+.confirma a button{
+    width: 140px;
+    height: 50px;
+    font-size: 18px;
+
+    background-color: rgb(0, 255, 55);
+}
+
+footer h3{
+    margin: auto;
+    text-align: center;
+}
+
+.social{
+    display: flex;
+}
+
+.social img{
+    max-width: 50px;
+}
+
+.facebook{
+    margin: auto;
+    text-align: center;
+    justify-items: center;
+}
+
+.instagram{
+    margin: auto;
+    text-align: center;
+    justify-items: center;
+}

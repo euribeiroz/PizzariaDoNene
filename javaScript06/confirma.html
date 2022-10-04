@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/confirma.css">
+    <link rel="icon" href="img/Pizzaria_do_Nene_-_xulz_page-0001-removebg-preview.png">
+    <script src="js/confirma.js"></script>
+    <title>Confirmação</title>
+</head>
+<body onload="dadosUsuario()">
+    <header>
+        <h1>Confirmação de <label style="color: rgb(0, 255, 55);" for="">Pedido</label></h1>
+    </header>
+    <div class="dadosUsuario">
+        <h3>Dados do usuario</h3>
+        <p>Nome:</p>
+        <i id="nome"></i><br><br>
+        <p>Endereço:</p>
+        <i id="endereco"></i><br><br>
+        <p>Email:</p>
+        <i id="email"></i><br><br>
+        <p>Telefone:</p>
+        <i id="telefone"></i>
+    </div>
+    <br><hr><br>
+    <p>Clique logo abaixo em "Detalhes do pedido" para visualizar seu pedido</p>
+    <a style="color: rgb(0, 255, 55);" onclick="pedido()">Detalhes do pedido</a>
+    <div class="pedido">
+        <div class="tamanhoPedido">
+            <i for="">Tamanho:</i>
+            <p id="tamanho"></p>
+        </div>
+
+        <div class="saboresPedido">
+            <i style="color: rgb(0, 255, 55);" for="">Sabores:</i>
+            <p id="sabores"></p>
+        </div>
+
+        <div class="saborPedido">
+            <i>Sabor:</i>
+            <p id="sabor"><br>
+            </p>
+        </div>
+
+        <div class="adicionalPedido">
+            <i style="color: rgb(0, 255, 55);" for="">Adicional:</i>
+            <p id="adicional"></p>
+        </div>
+
+        <div class="bebidaPedido">
+            <i for="">Bebida:</i>
+            <p id="bebida"></p>
+        </div>
+
+        <div class="retiradaPedido">
+            <i style="color: rgb(0, 255, 55);" for="">Retirada:</i>
+            <p id="retirada"></p>
+        </div>
+    </div>
+    <div class="valorTotal">
+        <i for="">Valor Total:
+            <br>R$</i>
+        <label id="precoTotal"></label>
+    </div>
+
+    <button class="finalizar">Finalizar Pedido</button>
+</body>
+</html>

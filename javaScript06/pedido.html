@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pedido.css">
+    <script src="js/pedido.js"></script>
+    <link rel="icon" href="img//Pizzaria_do_Nene_-_xulz_page-0001-removebg-preview.png">
+    <title>Pedido</title>
+</head>
+<body>
+    <header>
+        <div class="cabeca">
+            <div class="cabeca-logo">
+                <img src="img/Pizzaria_do_Nene_-_xulz_page-0001-removebg-preview.png" alt="">
+            </div>
+
+            <div class="cabeca-titulo">
+                <h1>PIZZARIA DO <label style="color: rgb(0, 255, 55);">NENE</label></h1>
+            </div>
+
+            <div class="cabeca-logo-direita">
+                <img src="img/Pizzaria_do_Nene_-_xulz_page-0001-removebg-preview.png" alt="">
+            </div>
+        </div>
+    </header>
+    <div class="formulario">
+        <h3>Cadastro</h3><br>
+        <p style="color: rgb(0, 255, 55);">Nome</p>
+        <input type="text" name="" id="nome" required><br>
+        <p>Endereço</p>
+        <input type="text" name="" id="endereco" required><br>
+        <p style="color: rgb(0, 255, 55);">E-mail</p>
+        <input type="email" name="" id="email" required><br>
+        <p>Telefone</p>
+        <input type="number" name="" id="telefone" required><br><br>
+        <button onclick="cadastro()">Cadastrar</button required><br>
+        <p style="color: rgb(0, 255, 55);" id="resultado"></p>
+    </div>
+    <br><hr><br>
+    <h2>Pedido</h2><br>
+    <div class="pedido">
+        <div class="tamanhoPizza">
+            <h3 style="color: rgb(0, 255, 55);">Tamanho</h3>
+            <select name="" id="tamanhoPizza">
+                <option value="">Pequeno(R$9,00)</option>
+                <option value="">Medio(R$12,00)</option>
+                <option value="">Grande(R$16,00)</option>
+                <option value="">Gigante(R$22,00)</option>
+            </select><br>
+            <button onclick="tamanhoPizza()">confirmar</button>
+            <p style="color: rgb(0, 255, 55);" id="resposta1"></p>
+        </div>
+        
+        <div class="saboresPizza">
+            <h3>Sabores</h3>
+            <select name="" id="saboresPizza">
+                <option value="">2 Sabores(R$2,00)</option>
+                <option value="">3 Sabores(R$3,00)</option>
+                <option value="">4 Sabores(R$4,00)</option>
+                <option value="">5 Sabores(R$5,00)</option>
+            </select><br>
+            <button onclick="saboresPizza()">Confirmar</button><br>
+            <p style="color: rgb(0, 255, 55);" id="resposta2"></p>
+        </div>
+
+        <div class="saborPizza">
+            <h3 style="color: rgb(0, 255, 55);">Sabor</h3>
+            <input type="checkbox" name="" id="1" value="5 Queijos">
+            <label for="">5 Quejos</label><br>
+            <input type="checkbox" name="" id="2" value="Calabresa">
+            <label for="">Calabresa</label><br>
+            <input type="checkbox" name="" id="3" value="Sensação">
+            <label for="">Sensação</label><br>
+            <input type="checkbox" name="" id="4" value="Banana Nevada">
+            <label for="">Banana Nevada</label><br>
+            <input type="checkbox" name="" id="5" value="Romeu e Julieta">
+            <label for="">Romeu e Julieta</label><br>
+            <button onclick="saborPizza()">Confirmar</button>
+            <p style="color: rgb(0, 255, 55);" id="resposta6"></p>
+        </div>
+
+        <div class="adicionaisPizza">
+            <h3>Adicional</h3>
+            <select name="" id="adicionaisPizza">
+                <option value="">Nenhum</option>
+                <option value="">Porção de Anéis de Cebola(R$2,00)</option>
+                <option value="">Porção de Fatias de Calabresa(R$ 2,00)</option>
+                <option value="">Porção de Batata Frita(R$ 2,00)</option>
+                <option value="">Porção de Aipim Frito(R$ 2,00)</option>
+            </select><br>
+            <button onclick="adicionaisPizza()">Confirmar</button><br>
+            <p style="color: rgb(0, 255, 55);" id="resposta3"></p>
+        </div>
+
+        <div class="bebidasPizza">
+            <h3 style="color: rgb(0, 255, 55);">Bebidas</h3>
+            <select name="" id="bebidasPizza">
+                <option value="">Nenhum</option>
+                <option value="">Guaraná Antarctica 2L(9,00)</option>
+                <option value="">Energético Red-Bull 2L(R$9,00)</option>
+                <option value="">Coca-Cola 2L(R$ 9,00)</option>
+                <option value="">Suco de Laranja 2L(R$ 9,00)</option>
+            </select><br>
+            <button onclick="bebidasPizza()">Confirmar</button><br>
+            <p style="color: rgb(0, 255, 55);" id="resposta4"></p>
+        </div>
+
+        <div class="retiradaPizza">
+            <h3>Retirada</h3>
+            <select name="" id="retiradaPizza">
+                <option value="">Balcão(R$ 0,00)</option>
+                <option value="">Entrega(R$9,00)</option>
+            </select><br>
+            <button onclick="retiradaPizza()">Confirmar</button><br>
+            <p style="color: rgb(0, 255, 55);" id="resposta5"></p>
+        </div>
+    </div><br><br>
+    <div class="confirma">
+        <a href="confirma.html"><button>Confirmar Pedido</button></a>
+    </div><br>
+    <hr><br>
+    <footer>
+        <h3>Redes <label style="color: rgb(0, 255, 55);">Socias</label></h3>
+        <div class="social">
+        <div class="facebook">
+            <img src="img/f79920f4cb34986684e29df42ec0cebe-removebg-preview.png" alt="">
+            <label for="">pizzariaDoNêne</label>
+        </div>
+
+        <div class="instagram">
+            <img src="img/Instagram_icon.png.webp" alt="">
+            <label for="">@pizzariado_nene</label>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>
